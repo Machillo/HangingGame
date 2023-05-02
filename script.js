@@ -124,7 +124,7 @@ let gameHorca = {
     if (state === 9) {
       state = gameHorca.previus;
     }
-    $elem.src = "/img/ahorcado0" + state + ".png";
+    $elem.src = "img/ahorcado0" + state + ".png";
 
     // Crear letras adivinadas
     $elem = $html.guessed;
