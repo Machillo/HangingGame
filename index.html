@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+
+    <!--Pagina principal -->
+    <section class="home-page">
+        <div class="btns">
+            <button class="btn-start">Iniciar juego</button>
+            <button class="btn-newWord">Añadir una nueva palabra</button>
+        </div>
+    </section>
+
+    <!--Pagina del juego del Ahorcado -->
+    <section class="game-page">
+      <div class="container__game">
+        <div class="container__ahorcado">
+          <img id="ahorcado" alt="ahorcado" />
+        </div>
+        <div class="guessed-words"></div>
+        <input type="text" id="words" onkeyup="guessLetter(this.value)" />
+        <div class="wrong-words"></div>
+        <div class="container__btns">
+          <button class="btn-newGame">Nuevo juego</button>
+          <button class="btn-desist">Desistir</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal__win">
+      <div class="modal__container">
+        <h2 class="modal__title">Felicidades!</h2>
+        <p class="modal__paragraph">Ganaste</p>
+        <a href="#" class="modal__close">OK</a>
+      </div>
+    </section>
+
+    <section class="modal__gameOver">
+      <div class="modal__container">
+        <h2 class="modal__title">Perdiste</h2>
+        <p class="modal__paragraph" id="end"></p>
+        <a href="#" class="modal__close--end">OK</a>
+      </div>
+    </section>
+
+    <!--Pagina agregar nueva palabra-->
+    <section class="newWord-page">
+      <div class="container__newWord">
+        <textarea
+          type="text"
+          id="newWord__text"
+          placeholder="Ingrese una palabra"
+        ></textarea>
+        <div class="max__letters">
+            <p>Máx. de 8 letras</p>
+        </div>
+        <div class="btns__newWord">
+          <button class="btn__save">Guardar y empezar</button>
+          <button class="btn__cancel">Cancelar</button>
+        </div>
+      </div>
+    </section>
+
+    <!--rondapie-->
+    <footer>
+      <div class="container-footer">
+        <p>Creado por Kenneth Alvarado</p>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
