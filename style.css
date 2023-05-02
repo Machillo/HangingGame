@@ -4,26 +4,19 @@
 }
 
 :root {
-    --darkblue: #0a3871;
+    --brown: #624c2b;
 }
 
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body {
-    background: #F3F5FC;
     font-family: 'Inter', sans-serif;
     font-style: normal;
+    background-image: url('/img/background.jpg');
 }
 
-.container-logo {
-    align-items: flex-start;
-    display: flex;
-    left: 40px;
-    position: absolute;
-    top: 40px;
-}
 
 .home-page {
     height: 95vh;
@@ -39,7 +32,7 @@ body {
 }
 
 .btn-start {
-    background: var(--darkblue);
+    background: var(--brown);
     border-radius: 24px;
     border: none;
     color: #fff;
@@ -63,8 +56,8 @@ body {
 .btn-newWord {
     background: #F3F5FC;
     border-radius: 24px;
-    border: 1px solid var(--darkblue);
-    color: var(--darkblue);
+    border: 1px solid var(--brown);
+    color: var(--brown);
     cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     font-size: 18px;
@@ -85,7 +78,7 @@ body {
 
 .container-footer {
     align-items: center;
-    color: var(--darkblue);
+    color: #fff;
     display: flex;
     font-size: 18px;
     line-height: 19px;
@@ -107,10 +100,6 @@ body {
 
     .home-page {
         height: 93vh;
-    }
-
-    .container-logo {
-        left: 20px;
     }
 
     .btns {
@@ -135,7 +124,7 @@ body {
 /*game*/
 
 :root {
-    --darkblue: #0a3871;
+    --brown: #624c2b;
 }
 
 .game-page {
@@ -159,7 +148,7 @@ body {
 }
 
 .guessed-words {
-    color: var(--darkblue);
+    color: var(--brown);
     display: flex;
     font-size: 1.8rem;
     justify-content: center;
@@ -186,11 +175,11 @@ body {
 
 .guessed {
     padding: 1rem;
-    border-bottom: 3px solid var(--darkblue);
+    border-bottom: 3px solid var(--brown);
 }
 
 .wrong-words {
-    color: #495057;
+    color: #000307;
     display: flex;
     font-size: 1.2rem;
     justify-content: center;
@@ -206,7 +195,7 @@ body {
 }
 
 .btn-newGame {
-    background: var(--darkblue);
+    background: var(--brown);
     border: none;
     border-radius: 24px;
     color: #fff;
@@ -219,9 +208,9 @@ body {
 }
 
 .btn-desist {
-    border: 1px solid var(--darkblue);
+    border: 1px solid var(--brown);
     border-radius: 24px;
-    color: var(--darkblue);
+    color: var(--brown);
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
@@ -252,7 +241,7 @@ body {
 .modal__container {
     background-color: #f3f5f6;
     border-radius: 10px;
-    color: var(--darkblue);
+    color: var(--brown);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -277,7 +266,7 @@ body {
 
 .modal__close,
 .modal__close--end {
-    background: var(--darkblue);
+    background: var(--brown);
     border-radius: 10px;
     color: #fff;
     margin: 0 auto;
@@ -426,7 +415,7 @@ body {
 /*New word*/
 
 :root {
-    --darkblue: #0a3871;
+    --brown: #624c2b;
 }
 
 .newWord-page {
@@ -474,7 +463,7 @@ body {
 }
 
 .btn__save {
-    background: var(--darkblue);
+    background: var(--brown);
     border: none;
     border-radius: 24px;
     color: #fff;
@@ -488,9 +477,9 @@ body {
 
 .btn__cancel {
     background: transparent;
-    border: 1px solid var(--darkblue);
+    border: 1px solid var(--brown);
     border-radius: 24px;
-    color: var(--darkblue);
+    color: var(--brown);
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;

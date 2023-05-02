@@ -251,3 +251,7 @@ let gameHorca = {
     e.preventDefault();
     openModalEnd.classList.remove("modal__gameOver--show");
   });
+
+
+
+	
